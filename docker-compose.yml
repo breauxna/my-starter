@@ -1,0 +1,12 @@
+services:
+  mongo:
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password123
+    volumes:
+      - ./backend/mongodb/data:/data/testdb
+    ports:
+      - '27017:27017'
+    command: mongod
+    restart: unless-stopped
