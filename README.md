@@ -6,7 +6,7 @@ Welcome! This is the codebase for exploring the fake online EverAvenue store's p
 
 Ensure you have [Docker](https://www.docker.com/) installed, then run:
 
-- `yarn`
+- `yarn install:all`
 - `yarn dev`
 
 This will spin up the project without any data. To seed the project with data run
